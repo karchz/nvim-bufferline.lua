@@ -833,11 +833,11 @@ function M.setup(prefs)
   -----------------------------------------------------------
   -- Commands
   -----------------------------------------------------------
-  vim.cmd('command BufferLinePick lua require"bufferline".pick_buffer()')
-  vim.cmd('command BufferLineCycleNext lua require"bufferline".cycle(1)')
-  vim.cmd('command BufferLineCyclePrev lua require"bufferline".cycle(-1)')
-  vim.cmd('command BufferLineMovePrev lua require"bufferline".move(-1)')
-  vim.cmd('command BufferLineMoveNext lua require"bufferline".move(1)')
+  vim.cmd('command! BufferLinePick lua require"bufferline".pick_buffer()')
+  vim.cmd('command! BufferLineCycleNext lua require"bufferline".cycle(1)')
+  vim.cmd('command! BufferLineCyclePrev lua require"bufferline".cycle(-1)')
+  vim.cmd('command! BufferLineMovePrev lua require"bufferline".move(-1)')
+  vim.cmd('command! BufferLineMoveNext lua require"bufferline".move(1)')
 
   -- TODO / idea: consider allowing these mappings to open buffers based on their
   -- visual position i.e. <leader>1 maps to the first visible buffer regardless
